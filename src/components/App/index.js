@@ -1,5 +1,7 @@
 import './App.css';
-import Comments from '../Comments';
+import Comments from '../Comments/CommentsForm';
+import CommentsViewer from '../Comments/CommentsViewer'
+const API_URL = process.env.REACT_APP_API_URL;
 
 function App() {
   return (
@@ -8,7 +10,8 @@ function App() {
       <p>
         <a href="https://withluis.com/">Old Portfolio</a>
       </p>
-      <Comments />
+      <Comments API_URL={API_URL}/>
+      <CommentsViewer API_URL={API_URL}/>
     </div>
   );
 }

@@ -2,9 +2,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import './index.css';
 
-const API_URL = process.env.REACT_APP_API_URL;
-
-const Comments = () => {
+const Comments = ({API_URL}) => {
   const { register, handleSubmit } = useForm();
 
   const onSubmit = (data) => {
@@ -15,7 +13,7 @@ const Comments = () => {
         body: JSON.stringify(data),
       });
       const newComment = await response.json();
-      console.log('I like your comment', newComment.payload[0].comment);
+      console.log('I like your comment:', newComment.payload[0].comment);
     }
     postComment();
   };
