@@ -1,4 +1,5 @@
 import './App.css';
+import Comments from '../Comments';
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <p>
         <a href="https://withluis.com/">Old Portfolio</a>
       </p>
+      <Comments />
     </div>
   );
 }
