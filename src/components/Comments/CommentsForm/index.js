@@ -2,8 +2,8 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import './index.css';
 
-const Comments = ({API_URL}) => {
-  const { register, handleSubmit } = useForm();
+const CommentsForm = ({ API_URL, comments, setComments }) => {
+  const { register, handleSubmit, reset } = useForm();
 
   const onSubmit = (data) => {
     async function postComment() {
@@ -12,10 +12,12 @@ const Comments = ({API_URL}) => {
         method: 'POST',
         body: JSON.stringify(data),
       });
-      const newComment = await response.json();
-      console.log('I like your comment:', newComment.payload[0].comment);
+      const { payload } = await response.json();
+      setComments([...comments, ...payload]);
+      console.log(comments);
     }
     postComment();
+    reset();
   };
 
   return (
@@ -62,4 +64,4 @@ const Comments = ({API_URL}) => {
   );
 };
 
-export default Comments;
+export default CommentsForm;

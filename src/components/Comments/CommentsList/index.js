@@ -10,12 +10,15 @@ const CommentsList = ({ comments, setComments, API_URL }) => {
       const res = await fetch(`${API_URL}/comments/${id}`, {
         method: 'DELETE',
       });
+      //NEED TO CHANGE THE LOGIC BELLOW TO AVOID FILTER
+      //USING THE INDEX TO SLICE MAYBE
       setComments(
         comments.filter((comment) => {
-          return comment.id === id;
+          return comment.id !== id;
         })
       );
     }
+
     deleteCommentById(id);
   }
 
@@ -35,7 +38,12 @@ const CommentsList = ({ comments, setComments, API_URL }) => {
               </p>
             </div>
             <div>
-              <button key={comment.id} value={comment.id} onClick={editComment}>
+              <button
+                key={comment.id}
+                onClick={() => {
+                  editComment(comment.id);
+                }}
+              >
                 EDIT
               </button>
             </div>
