@@ -14,7 +14,6 @@ const CommentsForm = ({ API_URL, comments, setComments }) => {
       });
       const { payload } = await response.json();
       setComments([...comments, ...payload]);
-      console.log(comments);
     }
     postComment();
     reset();

@@ -9,7 +9,7 @@ const CommentsViewer = ({ API_URL, comments, setComments }) => {
       setComments(data.payload);
     }
     getComments();
-  }, []);
+  }, [comments]);
 
   return (
     <div>
