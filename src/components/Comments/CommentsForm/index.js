@@ -2,20 +2,43 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import './index.css';
 
-const CommentsForm = ({ API_URL, comments, setComments }) => {
+const CommentsForm = ({
+  API_URL,
+  comments,
+  setComments,
+  update,
+  setUpdate,
+  idUpdate,
+  setAddComment,
+}) => {
   const { register, handleSubmit, reset } = useForm();
 
   const onSubmit = (data) => {
-    async function postComment() {
-      const response = await fetch(`${API_URL}/comments`, {
-        headers: { 'Content-Type': 'application/json' },
-        method: 'POST',
-        body: JSON.stringify(data),
-      });
-      const { payload } = await response.json();
-      setComments([...comments, ...payload]);
+    if (update) {
+      async function updateComment() {
+        const response = await fetch(`${API_URL}/comments/${idUpdate}`, {
+          headers: { 'Content-Type': 'application/json' },
+          method: 'PUT',
+          body: JSON.stringify(data),
+        });
+        const { payload } = await response.json();
+        setComments([...comments, ...payload]);
+        setUpdate(!update);
+      }
+      updateComment();
+    } else {
+      async function postComment() {
+        const response = await fetch(`${API_URL}/comments`, {
+          headers: { 'Content-Type': 'application/json' },
+          method: 'POST',
+          body: JSON.stringify(data),
+        });
+        const { payload } = await response.json();
+        setComments([...comments, ...payload]);
+      }
+      postComment();
     }
-    postComment();
+    setAddComment(false);
     reset();
   };
 
@@ -57,7 +80,9 @@ const CommentsForm = ({ API_URL, comments, setComments }) => {
             required: 'Required',
           })}
         />
-        <input type="submit" />
+
+        {!update ? <input type="submit" /> : ''}
+        {update ? <button type="submit">Confirm Edition</button> : ''}
       </form>
     </div>
   );

@@ -2,8 +2,20 @@ import React, { useState, useEffect } from 'react';
 
 import './index.css';
 
-const CommentsList = ({ comments, setComments, API_URL }) => {
-  function editComment() {}
+const CommentsList = ({
+  comments,
+  setComments,
+  update,
+  setUpdate,
+  setIdUpdate,
+  setAddComment,
+  API_URL,
+}) => {
+  function editComment(id) {
+    setUpdate(!update);
+    setIdUpdate(id)
+    setAddComment(true)
+  }
 
   function deleteComment(id) {
     async function deleteCommentById(id) {
@@ -18,7 +30,6 @@ const CommentsList = ({ comments, setComments, API_URL }) => {
         })
       );
     }
-
     deleteCommentById(id);
   }
 
