@@ -1,12 +1,24 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import './index.css'
+import './index.css';
 
 const Comments = () => {
   const { register, handleSubmit } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data);
+    async function postComment() {
+      const response = await fetch(
+        `https://luis--react--portfolio.herokuapp.com/comments`,
+        {
+          headers: { 'Content-Type': 'application/json' },
+          method: 'POST',
+          body: JSON.stringify(data),
+        }
+      );
+      const newComment = await response.json();
+      console.log('I like your comment', newComment.payload[0].comment);
+    }
+    postComment();
   };
 
   return (
@@ -19,9 +31,9 @@ const Comments = () => {
           {...register('firstName', {
             required: 'Required',
           })}
-        /> 
+        />
         <label>Last Name</label>
-        
+
         <input
           name="lastName"
           type="text"
@@ -30,7 +42,7 @@ const Comments = () => {
           })}
         />
         <label>Job Title</label>
-        
+
         <input
           name="jobTitle"
           type="text"
@@ -39,7 +51,7 @@ const Comments = () => {
           })}
         />
         <label>Comment</label>
-        
+
         <textarea
           name="comment"
           type="text"
