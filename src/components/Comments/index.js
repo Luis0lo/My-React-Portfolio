@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import CommentsForm from './CommentsForm';
 import CommentsViewer from './CommentsViewer';
+import './index.css'
 
 const Comments = ({ API_URL }) => {
   const [comments, setComments] = useState([]);
@@ -9,7 +10,7 @@ const Comments = ({ API_URL }) => {
   const [addComment, setAddComment] = useState(false);
 
   return (
-    <div>
+    <div className='comments_container'>
     <h2>Comments</h2>
       <button
         onClick={() => {

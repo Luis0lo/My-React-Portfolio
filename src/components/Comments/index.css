@@ -1,0 +1,7 @@
+.comments_container {
+  max-width: 400px;
+  margin: auto;
+  background-color: azure;
+  border: 1px solid blue;
+  border-radius: 1rem;
+}
