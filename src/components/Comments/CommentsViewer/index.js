@@ -17,7 +17,7 @@ const CommentsViewer = ({
       setComments(data.payload);
     }
     getComments();
-  }, [comments]);
+  }, []);
 
   return (
     <div>
