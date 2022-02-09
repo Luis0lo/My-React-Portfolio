@@ -1,15 +1,15 @@
 import './App.css';
-import Comments from '../Comments';
+// import Comments from '../Comments';
 // import Visitor from '../Visitor';
-import UserAuth from '../UserAuth'
-const API_URL = process.env.REACT_APP_API_URL;
-
+// import UserAuth from '../UserAuth'
+// const API_URL = process.env.REACT_APP_API_URL;
+import ProfileBar from '../ProfileBar';
 function App() {
   return (
     <div className="App">
-      <h1>Luis Rodrigues</h1>
-      <Comments API_URL={API_URL} />
-      <UserAuth />
+      <ProfileBar />
+      {/* <Comments API_URL={API_URL} /> */}
+      {/* <UserAuth /> */}
       {/* <Visitor /> */}
     </div>
   );

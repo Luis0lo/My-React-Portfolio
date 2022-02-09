@@ -1,7 +1,7 @@
 import React from 'react';
 import LoginButton from './LoginButton';
 import LogoutButton from './LogoutButton';
-import Profile from './Profile';
+import Profile1 from './Profile1';
 
 const UserAuth = () => {
   return (
@@ -13,7 +13,7 @@ const UserAuth = () => {
         <LogoutButton />
       </div>
       <div>
-        <Profile />
+        <Profile1 />
       </div>
     </div>
   );

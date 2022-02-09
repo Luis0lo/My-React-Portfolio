@@ -1,0 +1,73 @@
+.mainSection {
+  position: fixed;
+  display: flex;
+  min-height: 100vh;
+  background-color: ;
+  margin: -14vh 0px;
+  left: 6vw;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  min-width: 18vw;
+  max-height: 80vh;
+  padding: 1.2rem;
+  color: #fff;
+  font-size: bold;
+  background-color: #141b41;
+  z-index: 2;
+  padding-bottom: 2.5rem;
+  border-radius: 0.5rem;
+}
+
+.imgProfile {
+  min-height: 150px;
+  max-width: 150px;
+  border-radius: 50%;
+  background-color: var(--green-color);
+  margin: auto;
+}
+.imgProfile img {
+  max-height: 150px;
+  border-radius: 50%;
+}
+h1 {
+  font-weight: lighter;
+}
+h2 {
+  font-size: 18px;
+  font-weight: lighter;
+}
+.name,
+.role,
+.tools,
+.education,
+.contact {
+  background-color: #139bc1;
+  border-radius: 0.3rem;
+}
+/* .pd {
+  padding: 10px 5px;
+}
+.pdb {
+  padding-bottom: 10px;
+}
+.pdx {
+  padding: 0 5px;
+}
+.bd {
+  border-radius: 10px;
+}
+.mt1 {
+  margin-top: 0.5rem;
+} */
+.contact {
+  position: absolute;
+  top: 85vh;
+  left: 4.5vw;
+  min-width: 51%;
+  
+}
