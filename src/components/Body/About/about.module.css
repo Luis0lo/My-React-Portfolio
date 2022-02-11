@@ -1,0 +1,9 @@
+.aboutMe {
+    /* font-family: var(--text-content); */
+    font-weight: 500;
+    background-color: rgb(160, 232, 175);
+    text-align: center;
+    line-height: 1.3rem;
+    /* color: var(--dark-green); */
+    border-radius: 1rem;
+  }
