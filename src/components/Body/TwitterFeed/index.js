@@ -1,13 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { TwitterTimelineEmbed } from 'react-twitter-embed';
 
 const TwitterFeed = () => {
+  return (
+    <div>
+      <TwitterTimelineEmbed
+        sourceType="profile"
+        screenName="withluis1"
+        options={{ height: 400 }}
+      />
+    </div>
+  );
+};
 
-
-    return (
-        <div>
-            Twitter Feed
-        </div>
-    )
-}
-
-export default TwitterFeed
+export default TwitterFeed;
