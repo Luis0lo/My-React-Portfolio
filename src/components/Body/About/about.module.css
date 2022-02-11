@@ -7,3 +7,13 @@
     /* color: var(--dark-green); */
     border-radius: 1rem;
   }
+
+.content {
+  padding: 1rem;
+}
+
+.content p{
+  font-weight: lighter;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}

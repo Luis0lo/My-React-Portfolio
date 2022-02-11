@@ -3,12 +3,12 @@
   margin-left: 30vw;
   max-width: 63vw;
   min-height: 90vh;
-  margin-top: 7vh;
+  margin-top: 5vh;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr;
   grid-template-rows: 110px 120px 1fr 1.1fr 0.9fr;
-  gap: 3em 2em;
+  gap: 2em 2em;
   grid-auto-flow: row;
   grid-template-areas:
     'about about about about about'

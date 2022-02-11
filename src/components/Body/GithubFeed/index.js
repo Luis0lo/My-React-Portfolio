@@ -36,8 +36,8 @@ const GithubFeed = () => {
   return (
     <div className={css.container}>
       <div className={css.container2}>
-        <a href="#"><FaGithubAlt size="3em" title="CSS" /></a>
-        <p>{data} Repositories to Explore</p>
+        <a href="https://github.com/Luis0lo"><FaGithubAlt size="3em" title="Github" /></a>
+        <p className={css.repositories}>{data} Repositories to Explore</p>
         <span className={css.calendar}><GitHubCalendar
           username="luis0lo"
           transformData={selectLastHalfYear}

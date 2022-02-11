@@ -7,7 +7,7 @@ const TwitterFeed = () => {
       <TwitterTimelineEmbed
         sourceType="profile"
         screenName="withluis1"
-        options={{ height: 400 }}
+        options={{ height: 380 }}
       />
     </div>
   );
