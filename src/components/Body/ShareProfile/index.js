@@ -10,14 +10,14 @@ const url = 'www.linkedin.com/in/withluis'
 
   return (
     <div className={css.stickyShare}>
-        <span className={css.shareSpan}><FaShareAlt size="2.5em" title="css" /></span>
+        <span className={css.shareSpan}><FaShareAlt size="2.5em" title="Share" /></span>
 
         <span>
         <LinkedinShareButton
         title={title}
         summary='Luis is a Software Developer looking for an opportunity to step in the tech world'
         url={url}>
-            <FaLinkedin size="2.5em" title="css" />
+            <FaLinkedin size="2.5em" title="Linkedin" />
         </LinkedinShareButton>
         </span>
 
@@ -25,7 +25,7 @@ const url = 'www.linkedin.com/in/withluis'
         <TwitterShareButton 
         title={title}
         url={url}>
-            <FaTwitterSquare size="2.5em" title="css" />
+            <FaTwitterSquare size="2.5em" title="Twitter" />
         </TwitterShareButton>
         </span>
 
@@ -33,7 +33,7 @@ const url = 'www.linkedin.com/in/withluis'
         <WhatsappShareButton
         title={title}
         url={url}>
-            <FaWhatsappSquare size="2.5em" title="css" />
+            <FaWhatsappSquare size="2.5em" title="Whatsapp" />
         </WhatsappShareButton>
         </span>
 
