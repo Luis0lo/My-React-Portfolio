@@ -1,0 +1,20 @@
+.buttonStyle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: 85vh;
+  left: 4.5vw;
+  min-width: 51%;
+  color: azure;
+  background-color: #139bc1;
+  border: none;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  padding: 0.4rem;
+}
+
+span {
+  padding-left: 0.5rem;
+}
