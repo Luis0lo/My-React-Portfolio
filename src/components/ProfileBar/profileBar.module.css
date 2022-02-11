@@ -9,7 +9,7 @@
 .profile {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
+  justify-content: space-around;
   text-align: center;
   min-width: 18vw;
   max-height: 80vh;
