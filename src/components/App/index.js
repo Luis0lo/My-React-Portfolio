@@ -3,10 +3,13 @@ import './App.css';
 // import Visitor from '../Visitor';
 // import UserAuth from '../UserAuth'
 // const API_URL = process.env.REACT_APP_API_URL;
+import Header from '../Header';
+
 import ProfileBar from '../ProfileBar';
 function App() {
   return (
     <div className="App">
+      <Header />
       <ProfileBar />
       {/* <Comments API_URL={API_URL} /> */}
       {/* <UserAuth /> */}

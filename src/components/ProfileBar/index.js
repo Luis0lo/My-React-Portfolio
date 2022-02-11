@@ -1,6 +1,5 @@
 import React from 'react';
 import css from './profileBar.module.css';
-import Header from '../Header';
 import ContactButton from '../ContactButton';
 import Skills from '../Skills';
 import ProfileImage from './profileSq.png';
@@ -10,8 +9,6 @@ import Education from '../Education';
 const ProfileBar = () => {
   return (
     <>
-      <Header />
-
       <div className={css.mainSection}>
         <div className={css.profile}>
           <div>
