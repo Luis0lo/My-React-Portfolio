@@ -13,12 +13,12 @@ const Skills = () => {
     <div>
       <h3>Skills</h3>
       <div>
-        <span><FaCss3Alt size="3em" title="css" /></span>
-        <span><FaBootstrap size="3em" title="css" /></span>
+        <span><FaCss3Alt size="3em" title="CSS" /></span>
+        <span><FaBootstrap size="3em" title="Bootstrap" /></span>
       </div>
       <div>
-        <span><FaJsSquare size="3em" title="node.js"/></span> 
-        <span><FaReact size="3em" title="node.js" /></span>
+        <span><FaJsSquare size="3em" title="JavaScript"/></span> 
+        <span><FaReact size="3em" title="React.js" /></span>
         <span><FaNodeJs size="3em" title="node.js" /></span>
       </div>
     </div>

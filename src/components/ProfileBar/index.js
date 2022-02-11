@@ -1,10 +1,9 @@
 import React from 'react';
 import css from './profileBar.module.css';
-import ContactButton from '../ContactButton';
-import Skills from '../Skills';
+import ContactButton from './ContactButton';
+import Skills from './Skills';
 import ProfileImage from './profileSq.png';
-import Education from '../Education';
-//icons
+import Education from './Education';
 
 const ProfileBar = () => {
   return (
