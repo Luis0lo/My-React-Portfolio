@@ -1,23 +1,26 @@
 const projects = [
   {
     id: 1,
-    title: 'Portfolio',
-    subTitle: 'prior to School of code',
+    title: 'OnePlace',
+    subTitle: 'React/Express.js Full-stack app',
     githubUrl: 'https://github.com/Luis0lo',
-    websiteUrl: 'https://withluis.com/',
+    websiteUrl: 'https://agitated-northcutt-ed9a89.netlify.app/',
     description: [
-      { id: 0, paragraph: 'This is the result of my self learning journey' },
+      { id: 0, paragraph: 'In a team of 4 we had a week to build this app.' },
       {
         id: 1,
-        paragraph: 'In this portfolio, you can find several projects using a wide variety of tools.',
+        paragraph:
+          'For this app adopting an Agile methodology was crucial, as was continuous integration of new features in our main branch.',
       },
       {
         id: 2,
-        paragraph: 'I started with HTML and end up at the point where I had to build a basic DB and deploy a 100% functional app.',
+        paragraph:
+          'Component tree, User Stories, Deployment, Testing, Databases, CRUD, Postman, Retrospectives...',
       },
     ],
-    image: 'url',
-    imageAlt: 'Portfolio'
+    image:
+      'https://github.com/Luis0lo/My-React-Portfolio/blob/main/src/images/onePlace.jpg',
+    imageAlt: 'One place',
   },
   {
     id: 2,
@@ -26,18 +29,21 @@ const projects = [
     githubUrl: 'https://github.com/Luis0lo',
     websiteUrl: 'https://withluis.com/',
     description: [
-      { id: 0, paragraph: 'This is the result of my self learning journey' },
+      { id: 0, paragraph: 'This is the result of my self learning journey.' },
       {
         id: 1,
-        paragraph: 'In this portfolio, you can find several projects using a wide variety of tools.',
+        paragraph:
+          'In this portfolio, you can find several projects using a wide variety of tools.',
       },
       {
         id: 2,
-        paragraph: 'I started with HTML and end up at the point where I had to build a basic DB and deploy a 100% functional app.',
+        paragraph:
+          'I started with HTML and end up at the point where I had to build a basic DB and deploy a 100% functional app.',
       },
     ],
-    image: 'url',
-    imageAlt: 'Portfolio'
+    image:
+      'https://github.com/Luis0lo/My-React-Portfolio/blob/main/src/images/portfolioImg.jpg',
+    imageAlt: 'Portfolio',
   },
 ];
- export default projects
+export default projects;
