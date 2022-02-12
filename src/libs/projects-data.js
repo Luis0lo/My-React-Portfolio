@@ -10,7 +10,7 @@ const projects = [
       {
         id: 1,
         paragraph:
-          'For this app adopting an Agile methodology was crucial, as was continuous integration of new features in our main branch.',
+          'Adopting an Agile methodology was crucial, as was continuous integration of new features in our main branch',
       },
       {
         id: 2,
@@ -18,8 +18,7 @@ const projects = [
           'Component tree, User Stories, Deployment, Testing, Databases, CRUD, Postman, Retrospectives...',
       },
     ],
-    image:
-      'https://github.com/Luis0lo/My-React-Portfolio/blob/main/src/images/onePlace.jpg',
+    imageUrl: '/images/onePlace.jpg',
     imageAlt: 'One place',
   },
   {
@@ -41,8 +40,7 @@ const projects = [
           'I started with HTML and end up at the point where I had to build a basic DB and deploy a 100% functional app.',
       },
     ],
-    image:
-      'https://github.com/Luis0lo/My-React-Portfolio/blob/main/src/images/portfolioImg.jpg',
+    imageUrl: '/images/portfolioImg.jpg',
     imageAlt: 'Portfolio',
   },
 ];
