@@ -23,6 +23,28 @@ const projects = [
   },
   {
     id: 2,
+    title: 'Hold',
+    subTitle: 'made over Christmas break 🎄',
+    githubUrl: 'https://github.com/Luis0lo/Hold',
+    websiteUrl: 'https://www.youtube.com/watch?v=47dsyLJsiXs',
+    description: [
+      { id: 0, paragraph: 'Was the right time to put into practice what I have learned at school Of code in no more than a month.' },
+      {
+        id: 1,
+        paragraph:
+          'I have created an investment quotes API (CRUD) and I am fetching an external one to obtain real exchange rates and shares prices.',
+      },
+      {
+        id: 2,
+        paragraph:
+          "Proud! I managed to refactor and clean the main logic. I'm converting it into a React App.",
+      },
+    ],
+    imageUrl: '/images/holdPic.jpg',
+    imageAlt: 'Hold',
+  },
+  {
+    id: 3,
     title: 'Portfolio',
     subTitle: 'prior to School of code',
     githubUrl: 'https://github.com/Luis0lo',
