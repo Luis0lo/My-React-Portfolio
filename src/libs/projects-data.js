@@ -28,7 +28,7 @@ const projects = [
     githubUrl: 'https://github.com/Luis0lo/Hold',
     websiteUrl: 'https://www.youtube.com/watch?v=47dsyLJsiXs',
     description: [
-      { id: 0, paragraph: 'Was the right time to put into practice what I have learned at school Of code in no more than a month.' },
+      { id: 0, paragraph: 'Was the right time to put into practice what I have learned at School Of Code in no more than a month.' },
       {
         id: 1,
         paragraph:
@@ -46,7 +46,7 @@ const projects = [
   {
     id: 3,
     title: 'Portfolio',
-    subTitle: 'prior to School of code',
+    subTitle: 'prior to School of Code',
     githubUrl: 'https://github.com/Luis0lo',
     websiteUrl: 'https://withluis.com/',
     description: [
