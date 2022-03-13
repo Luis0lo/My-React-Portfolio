@@ -53,3 +53,9 @@ h2 {
 .tools {
   margin-bottom: 15px;
 }
+
+@media (max-width: 500px) {
+  .profile{
+    width: 85vw;
+  }
+}

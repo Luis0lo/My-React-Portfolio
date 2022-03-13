@@ -18,3 +18,9 @@
 span {
   padding-left: 0.5rem;
 }
+
+@media (max-width: 500px) {
+  .buttonStyle {
+    left: 20vw;
+  }
+}
