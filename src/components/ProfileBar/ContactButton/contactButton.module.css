@@ -24,3 +24,19 @@ span {
     left: 20vw;
   }
 }
+
+.buttonModal {
+  cursor: pointer;
+  min-width: 20vw;
+  color: azure;
+  background-color: #139bc1;
+  border: none;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  padding: 0.4rem;
+  margin-top: 3rem;
+}
+.modal {
+  margin-top: 20vh;
+  text-align: center;
+}
