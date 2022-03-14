@@ -6,6 +6,7 @@ import './App.css';
 import Header from '../Header';
 import Body from '../Body';
 import ProfileBar from '../ProfileBar';
+
 function App() {
   return (
     <div className="App">

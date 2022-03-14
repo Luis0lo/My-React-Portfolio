@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import css from './topProjects.module.css'
 import{FaGithubSquare, FaLaptop} from 'react-icons/fa';
 import projects from '../../../libs/projects-data'
+import Footer from '../Footer'
 
 const TopProjects = () => {
   const [data, setData] = useState(projects)
@@ -32,6 +33,7 @@ const TopProjects = () => {
         )
       })}
         
+        <Footer />
             
         </div>
     )
