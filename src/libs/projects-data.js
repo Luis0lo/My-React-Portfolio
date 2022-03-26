@@ -1,6 +1,28 @@
 const projects = [
   {
     id: 1,
+    title: 'Nourish',
+    subTitle: 'React/Express.js Full-stack app',
+    githubUrl: 'https://github.com/SchoolOfCode/final-project-repo-restful-journey/blob/main/README.md',
+    websiteUrl: 'https://www.youtube.com/watch?v=dEsaNeUGXIQ',
+    description: [
+      { id: 0, paragraph: 'In a team of 5 we had a month to build this app from scratch.' },
+      {
+        id: 1,
+        paragraph:
+          'The app provides recipes around in season produce, allowing a user to create an account, shopping list and save favourite recipes as well.',
+      },
+      {
+        id: 2,
+        paragraph:
+          'Component tree, User Stories, Low & Hi Fidelity Design, Deployment, AUTH0, Testing (jest, supertest, cypress), API, Databases, CRUD, Postman, Retrospectives...',
+      },
+    ],
+    imageUrl: '/images/Nourish.png',
+    imageAlt: 'Nourish',
+  },
+  {
+    id: 2,
     title: 'OnePlace',
     subTitle: 'React/Express.js Full-stack app',
     githubUrl: 'https://github.com/Luis0lo',
@@ -22,7 +44,7 @@ const projects = [
     imageAlt: 'One place',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Hold',
     subTitle: 'made over Christmas break 🎄',
     githubUrl: 'https://github.com/Luis0lo/Hold',
@@ -44,7 +66,7 @@ const projects = [
     imageAlt: 'Hold',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Portfolio',
     subTitle: 'prior to School of Code',
     githubUrl: 'https://github.com/Luis0lo',
