@@ -9,7 +9,7 @@ const GithubFeed = () => {
   const selectLastHalfYear = (contributions) => {
     const currentYear = new Date().getFullYear();
     const currentMonth = new Date().getMonth();
-    const shownMonths = 6;
+    const shownMonths = 3;
 
     return contributions.filter((day) => {
       const date = new Date(day.date);

@@ -3,12 +3,13 @@ import { TwitterTimelineEmbed } from 'react-twitter-embed';
 
 const TwitterFeed = () => {
   return (
-    <div>
+    <div >
       <TwitterTimelineEmbed
         sourceType="profile"
         screenName="withluis1"
         options={{ height: 380 }}
       />
+      
     </div>
   );
 };
